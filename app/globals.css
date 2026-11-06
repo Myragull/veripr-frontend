@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/*
+  VeriPR design system
+  --------------------
+  All colors and fonts live here, in one place.
+  Every color below becomes a Tailwind class automatically:
+    --color-brand       ->  bg-brand, text-brand, border-brand
+    --color-severity-critical-bg  ->  bg-severity-critical-bg
+  To change the look of the whole app, change a value here.
+*/
+@theme {
+  /* Page and text */
+  --color-page: #eceff5;
+  --color-card: #ffffff;
+  --color-ink: #1a2038;
+  --color-muted: #5a6382;
+  --color-line: #e1e5ef;
+
+  /* Sidebar */
+  --color-sidebar: #1b2238;
+  --color-sidebar-active: #2b3556;
+  --color-sidebar-text: #c3c9dd;
+
+  /* Brand (indigo) */
+  --color-brand: #2b3a9f;
+  --color-brand-soft: #edf0fb;
+
+  /* Severity badges */
+  --color-severity-critical-bg: #fbe4e4;
+  --color-severity-critical-text: #9b1c1c;
+  --color-severity-high-bg: #fde8d3;
+  --color-severity-high-text: #9a4a05;
+  --color-severity-medium-bg: #f8edc0;
+  --color-severity-medium-text: #7a5a05;
+
+  /* Status badges */
+  --color-success-bg: #dff3e6;
+  --color-success-text: #1e6b3a;
+  --color-waiting-bg: #f8edc0;
+  --color-waiting-text: #7a5a05;
+  --color-dropped-bg: #e6e9f1;
+  --color-dropped-text: #4a5270;
+
+  /* Fonts (loaded in layout.js) */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
